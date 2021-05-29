@@ -1,38 +1,610 @@
+ 
 .App {
-  text-align: center;
+  background-image: linear-gradient(#4bfadc, #67df80);
+  background-color: white;
+  height: 95vh;
+  padding: 5vh 5vw 0 5vw;
+  /* justify-items: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  font-size: 90px;
+  line-height: 20px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sub-header {
+  font-size: 46px;
+  line-height: 50px;
+  font-weight: 500;
+  color: white;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.white-container {
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 100%;
+  border-radius: 25px;
+  border: 10px solid white
+}
+
+.containers {
+  flex-basis: 50%;
+}
+
+#upper-container {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+}
+
+#header-container {
+  text-align: center;
+  height: 100%;
+  width: 50%;
+}
+
+#verification-container {
+  height: 100%;
+  width: 55%;
+  margin: -20px auto;
+  /* background-color: red; */
+}
+
+#avatar-container {
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  justify-content: center;
+  /* padding-top: 50px; */
+  height: 100%;
+  width: 50%;
+  border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid violet;
+  background-color: violet;
+  width: 170px;
+  height: 170px;
+  margin: 40px auto;
+  /* padding-top: 10px; */
+}
+
+#avatar-head {
+  border-radius: 50%;
+  border: 1px solid #914fa3;
+  background-color: #914fa3;
+  width: 50px;
+  height: 50px;
+  margin: 30px auto;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+#avatar-body {
+  border: 1px solid #914fa3;
+  background-color: #914fa3;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  border-radius: 150px 10px 150px 10px;
+  margin: -20px auto;
+  opacity: 0.8;
+  
+}
+
+#lower-container {
+  /* background-color: tomato; */
+  padding: 0 60px 0 60px;
+  height: 50%;
+}
+
+#paragraph-container {
+  width: 94%;
+  height: 60%;
+  /* background-color: blue; */
+  margin: 30px auto;
+  text-align: left;
+}
+
+#paragraph {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 400;
+  color: white;
+}
+
+@media screen and (min-width : 409px) and (max-width: 480px) {
+  .App {
+    background-image: linear-gradient(#4bfadc, #67df80);
+    background-color: white;
+    height: 170vh;
+    padding: 5vh 0 0 5vw;
+    /* justify-items: center; */
   }
-  to {
-    transform: rotate(360deg);
+
+  
+  
+  .white-container {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    height: 160vh;
+    width: 85vw;
+    border-radius: 30px;
+    border: 8px solid white;
+    /* overflow: hidden; */
+  }
+  
+  #upper-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50vh;
+    /* background-color: brown; */
+  }
+  
+  #header-container {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+  }
+
+  .header {
+    font-size: 3.1rem;
+    line-height: 50px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #verification-container {
+    height: 100%;
+    width: 73%;
+    margin: -30px auto;
+    /* background-color: red; */
+  }
+  
+  .sub-header {
+    font-size: 3.1rem;
+    line-height: 50px;
+    font-weight: 500;
+    color: white;
+  }
+
+  #avatar-container {
+    background-color: white;
+    border-bottom-left-radius: 0px;
+    justify-content: center;
+    padding-top: 0px;
+    height: 100vh;
+    width: 86vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 1px solid violet;
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    /* padding-top: 10px; */
+  }
+  
+  #avatar-head {
+    border-radius: 50%;
+    border: 1px solid #914fa3;
+    background-color: #914fa3;
+    width: 40px;
+    height: 40px;
+    margin: 25px auto;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  
+  #avatar-body {
+    border: 1px solid #914fa3;
+    background-color: #914fa3;
+    width: 65px;
+    height: 65px;
+    transform: rotate(45deg);
+    border-radius: 150px 10px 150px 10px;
+    margin: -15px auto;
+    opacity: 0.8;
+    
+  }
+
+  #lower-container {
+    /* background-color: tomato; */
+    padding: 0 20px 0 20px;
+    height: 50%;
+  }
+
+  #paragraph-container {
+    width: 95%;
+    height: 100%;
+    /* background-color: blue; */
+    margin: 80px auto;
+    text-align: left;
+  }
+
+  #paragraph {
+    font-size: 1.5rem;
+    line-height: 26px;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+@media screen and (min-width : 384px) and (max-width: 409px) {
+  .App {
+    background-image: linear-gradient(#4bfadc, #67df80);
+    background-color: white;
+    height: 148vh;
+    padding: 5vh 0 0 5vw;
+    /* justify-items: center; */
+  }
+
+  
+  
+  .white-container {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+    width: 87vw;
+    border-radius: 30px;
+    border: 8px solid white;
+    /* overflow: hidden; */
+  }
+  
+  #upper-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50vh;
+    /* background-color: brown; */
+  }
+  
+  #header-container {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+  }
+
+  .header {
+    font-size: 2.85rem;
+    line-height: 50px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #verification-container {
+    height: 100%;
+    width: 70%;
+    margin: -30px auto;
+    /* background-color: red; */
+  }
+  
+  .sub-header {
+    font-size: 2.85rem;
+    line-height: 50px;
+    font-weight: 500;
+    color: white;
+  }
+
+  #avatar-container {
+    background-color: white;
+    border-bottom-left-radius: 0px;
+    justify-content: center;
+    padding-top: 0px;
+    height: 100vh;
+    width: 88vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 1px solid violet;
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    /* padding-top: 10px; */
+  }
+  
+  #avatar-head {
+    border-radius: 50%;
+    border: 1px solid #914fa3;
+    background-color: #914fa3;
+    width: 40px;
+    height: 40px;
+    margin: 25px auto;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  
+  #avatar-body {
+    border: 1px solid #914fa3;
+    background-color: #914fa3;
+    width: 65px;
+    height: 65px;
+    transform: rotate(45deg);
+    border-radius: 150px 10px 150px 10px;
+    margin: -15px auto;
+    opacity: 0.8;
+    
+  }
+
+  #lower-container {
+    /* background-color: tomato; */
+    padding: 0 20px 0 20px;
+    height: 50%;
+  }
+
+  #paragraph-container {
+    width: 89%;
+    height: 100%;
+    /* background-color: blue; */
+    margin: 70px auto;
+    text-align: left;
+  }
+
+  #paragraph {
+    font-size: 1.285rem;
+    line-height: 22px;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+@media screen and (min-width : 363px) and (max-width: 384px) {
+  .App {
+    background-image: linear-gradient(#4bfadc, #67df80);
+    background-color: white;
+    height: 160vh;
+    padding: 5vh 0 0 5vw;
+    /* justify-items: center; */
+  }
+
+  
+  
+  .white-container {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+    width: 87vw;
+    border-radius: 30px;
+    border: 8px solid white;
+    /* overflow: hidden; */
+  }
+  
+  #upper-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50vh;
+    /* background-color: brown; */
+  }
+  
+  #header-container {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+  }
+
+  .header {
+    font-size: 44px;
+    line-height: 50px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #verification-container {
+    height: 100%;
+    width: 70%;
+    margin: -30px auto;
+    /* background-color: red; */
+  }
+  
+  .sub-header {
+    font-size: 2.85rem;
+    line-height: 50px;
+    font-weight: 500;
+    color: white;
+  }
+
+  #avatar-container {
+    background-color: white;
+    border-bottom-left-radius: 0px;
+    justify-content: center;
+    padding-top: 0px;
+    height: 100vh;
+    width: 88vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 1px solid violet;
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    /* padding-top: 10px; */
+  }
+  
+  #avatar-head {
+    border-radius: 50%;
+    border: 1px solid #914fa3;
+    background-color: #914fa3;
+    width: 40px;
+    height: 40px;
+    margin: 25px auto;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  
+  #avatar-body {
+    border: 1px solid #914fa3;
+    background-color: #914fa3;
+    width: 65px;
+    height: 65px;
+    transform: rotate(45deg);
+    border-radius: 150px 10px 150px 10px;
+    margin: -15px auto;
+    opacity: 0.8;
+    
+  }
+
+  #lower-container {
+    /* background-color: tomato; */
+    padding: 0 20px 0 20px;
+    height: 50%;
+  }
+
+  #paragraph-container {
+    width: 89%;
+    height: 100%;
+    /* background-color: blue; */
+    margin: 70px auto;
+    text-align: left;
+  }
+
+  #paragraph {
+    font-size: 1.285rem;
+    line-height: 22px;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+@media screen and (min-width : 320px) and (max-width: 363px) {
+  .App {
+    background-image: linear-gradient(#4bfadc, #67df80);
+    background-color: white;
+    height: 150vh;
+    padding: 4vh 0 0 4vw;
+    /* justify-items: center; */
+  }
+
+  
+  
+  .white-container {
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+    width: 87vw;
+    border-radius: 30px;
+    border: 8px solid white;
+    /* overflow: hidden; */
+  }
+  
+  #upper-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50vh;
+    /* background-color: brown; */
+  }
+  
+  #header-container {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+  }
+
+  .header {
+    font-size: 2.3rem;
+    line-height: 46px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #verification-container {
+    height: 100%;
+    width: 70%;
+    margin: -30px auto;
+    /* background-color: red; */
+  }
+  
+  .sub-header {
+    font-size: 2.3rem;
+    line-height: 46px;
+    font-weight: 500;
+    color: white;
+  }
+
+  #avatar-container {
+    background-color: white;
+    border-bottom-left-radius: 0px;
+    justify-content: center;
+    padding-top: 0px;
+    height: 100vh;
+    width: 88vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  .circle {
+    border-radius: 50%;
+    border: 1px solid violet;
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    /* padding-top: 10px; */
+  }
+  
+  #avatar-head {
+    border-radius: 50%;
+    border: 1px solid #914fa3;
+    background-color: #914fa3;
+    width: 40px;
+    height: 40px;
+    margin: 25px auto;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  
+  #avatar-body {
+    border: 1px solid #914fa3;
+    background-color: #914fa3;
+    width: 65px;
+    height: 65px;
+    transform: rotate(45deg);
+    border-radius: 150px 10px 150px 10px;
+    margin: -15px auto;
+    opacity: 0.8;
+    
+  }
+
+  #lower-container {
+    /* background-color: tomato; */
+    padding: 0 20px 0 20px;
+    height: 50%;
+  }
+
+  #paragraph-container {
+    width: 94%;
+    height: 100%;
+    /* background-color: blue; */
+    margin: 30px auto;
+    text-align: left;
+  }
+
+  #paragraph {
+    font-size: 1.175rem;
+    line-height: 22px;
+    font-weight: 400;
+    color: white;
   }
 }
